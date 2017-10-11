@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+//
+// ページ全体の幅
+//
+
+%container {
+
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $container-max-width;
+  min-width: $container-min-width;
+
+  @if ($container-padded-width-desktop > 0) {
+    padding-left: $container-padded-width-desktop;
+    padding-right: $container-padded-width-desktop;
+  }
+
+  @include is-laptop {
+    @if ($container-padded-width-laptop > 0) and ($container-padded-width-laptop != $container-padded-width-desktop) {
+      padding-left: $container-padded-width-laptop;
+      padding-right: $container-padded-width-laptop;
+    }
+  }
+
+  @include is-palmtop {
+    @if ($container-padded-width-palmtop > 0) and ($container-padded-width-palmtop != $container-padded-width-desktop) {
+      padding-left: $container-padded-width-palmtop;
+      padding-right: $container-padded-width-palmtop;
+    }
+  }
+}
+
+@include output {
+  .container {
+    @extend %container;
+  }
+}

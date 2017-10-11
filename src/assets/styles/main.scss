@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+//
+// サイト全体で共通のスタイル
+//
+
+// サイト全体で共通のウェブフォント
+@import "fonts";
+
+// サイト全体で共通の設定
+@import "variables.built";
+
+// タービン製サイト共通のスタイル（セレクタを出力するタイプ）
+@import "../../../node_modules/core.css/scss/output";
+
+// サイト全体で共通の関数
+@import "functions";
+
+// サイト全体で共通のミックスイン
+@import "mixins";
+
+// サイト全体で共通のレイアウトの単位
+@import "units";
+
+// サイト全体で共通の HTML 要素のスタイル
+@import "elements";
+
+// サイト全体で共通のコンポーネント
+@import "components/site-content";
+@import "components/site-footer";
+@import "components/site-header";

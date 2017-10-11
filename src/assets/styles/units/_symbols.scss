@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+//
+// Data URI 画像
+//
+
+%symbol {
+  $this-size-desktop: 1em * $line-height-root-desktop;
+  $this-size-laptop: 1em * $line-height-root-laptop;
+  $this-size-palmtop: 1em * $line-height-root-palmtop;
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  height: $this-size-desktop;
+  vertical-align: bottom;
+  width: $this-size-desktop;
+
+  @include is-laptop {
+    @if ($this-size-laptop != $this-size-desktop) {
+      height: $this-size-laptop;
+      width: $this-size-laptop;
+    }
+  }
+
+  @include is-palmtop {
+    @if ($this-size-palmtop != $this-size-desktop) {
+      height: $this-size-palmtop;
+      width: $this-size-palmtop;
+    }
+  }
+}
+
+%symbol-example {
+  @extend %symbol;
+  @extend %symbol-example-variation;
+}
+
+%symbol-example-variation {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA1BMVEWAgICQdD0xAAAAC0lEQVQIHWMgEQAAADAAAQrnSBQAAAAASUVORK5CYII=");
+}
+
+@include output {
+  .symbol-example {
+    @extend %symbol-example;
+  }
+}

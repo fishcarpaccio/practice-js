@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+//
+// 要素の自然なスタイル
+//
+
+%natural {
+  display: block;
+  padding-bottom: $line-space-root-half-desktop;
+  padding-top: $line-space-root-half-desktop;
+
+  @include is-laptop {
+    @if ($line-space-root-half-laptop != $line-space-root-half-desktop) {
+      padding-bottom: $line-space-root-half-laptop;
+      padding-top: $line-space-root-half-laptop;
+    }
+  }
+
+  @include is-palmtop {
+    @if ($line-space-root-half-palmtop != $line-space-root-half-desktop) {
+      padding-bottom: $line-space-root-half-palmtop;
+      padding-top: $line-space-root-half-palmtop;
+    }
+  }
+}
+
+%natural-caption {
+  color: $color-gray;
+  font-size: px2percent($font-size-small-desktop);
+  line-height: $line-height-normal-desktop;
+  margin-bottom: $line-space-root-desktop;
+  margin-top: $line-space-root-desktop;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @include is-laptop {
+    @if ($font-size-small-laptop != $font-size-small-desktop) {
+      font-size: px2percent($font-size-small-laptop, $font-size-root-laptop);
+    }
+
+    @if ($line-height-normal-laptop != $line-height-normal-desktop) {
+      line-height: $line-height-normal-laptop;
+    }
+
+    @if ($line-space-root-laptop != $line-space-root-desktop) {
+      margin-bottom: $line-space-root-laptop;
+      margin-top: $line-space-root-laptop;
+    }
+  }
+
+  @include is-palmtop {
+    @if ($font-size-small-palmtop != $font-size-small-desktop) {
+      font-size: px2percent($font-size-small-palmtop, $font-size-root-palmtop);
+    }
+
+    @if ($line-height-normal-palmtop != $line-height-normal-desktop) {
+      line-height: $line-height-normal-palmtop;
+    }
+
+    @if ($line-space-root-palmtop != $line-space-root-desktop) {
+      margin-bottom: $line-space-root-palmtop;
+      margin-top: $line-space-root-palmtop;
+    }
+  }
+}
+
+%natural-code-block {
+  $this-vertical-padding-desktop: $natural-vertical-margin-desktop - $line-space-root-half-desktop;
+  $this-vertical-padding-laptop: $natural-vertical-margin-laptop - $line-space-root-half-laptop;
+  $this-vertical-padding-palmtop: $natural-vertical-margin-palmtop - $line-space-root-half-palmtop;
+
+  @extend %natural-solid;
+  background-color: $solarized-base03;
+  color: $solarized-base0;
+  border-radius: 0.25em;
+  padding: $this-vertical-padding-desktop $container-padded-width-desktop;
+
+  @include is-laptop {
+    @if ($this-vertical-padding-laptop != $this-vertical-padding-desktop) {
+      padding-bottom: $this-vertical-padding-laptop;
+    }
+
+    @if ($container-padded-width-laptop != $container-padded-width-desktop) {
+      padding-left: $container-padded-width-laptop;
+      padding-right: $container-padded-width-laptop;
+    }
+
+    @if ($this-vertical-padding-laptop != $this-vertical-padding-desktop) {
+      padding-top: $this-vertical-padding-laptop;
+    }
+  }
+
+  @include is-palmtop {
+    @if ($this-vertical-padding-palmtop != $this-vertical-padding-desktop) {
+      padding-bottom: $this-vertical-padding-palmtop;
+    }
+
+    @if ($container-padded-width-palmtop != $container-padded-width-desktop) {
+      padding-left: $container-padded-width-palmtop;
+      padding-right: $container-padded-width-palmtop;
+    }
+
+    @if ($this-vertical-padding-palmtop != $this-vertical-padding-desktop) {
+      padding-top: $this-vertical-padding-palmtop;
+    }
+  }
+}
+
+%natural-heading {
+  @extend %natural-solid;
+  display: block;
+  font-weight: bold;
+  line-height: $line-height-normal-desktop;
+
+  @include is-laptop {
+    @if ($line-height-normal-laptop != $line-height-normal-desktop) {
+      line-height: $line-height-normal-laptop;
+    }
+  }
+
+  @include is-palmtop {
+    @if ($line-height-normal-palmtop != $line-height-normal-desktop) {
+      line-height: $line-height-normal-palmtop;
+    }
+  }
+}
+
+%natural-indented {
+  padding-left: $container-padded-width-desktop;
+
+  @include is-laptop {
+    @if ($container-padded-width-laptop != $container-padded-width-desktop) {
+      padding-left: $container-padded-width-laptop;
+    }
+  }
+
+  @include is-palmtop {
+    @if ($container-padded-width-palmtop != $container-padded-width-desktop) {
+      padding-left: $container-padded-width-palmtop;
+    }
+  }
+}
+
+%natural-list-item {
+  margin-top: $line-space-root-half-desktop;
+
+  @include is-laptop {
+    @if ($line-space-root-half-laptop != $line-space-root-half-desktop) {
+      margin-top: $line-space-root-half-laptop;
+    }
+  }
+
+  @include is-palmtop {
+    @if ($line-space-root-half-palmtop != $line-space-root-half-desktop) {
+      margin-top: $line-space-root-half-palmtop;
+    }
+  }
+}
+
+%natural-solid {
+  $this-vertical-margin-desktop: $natural-vertical-margin-desktop - $line-space-root-half-desktop;
+  $this-vertical-margin-laptop: $natural-vertical-margin-laptop - $line-space-root-half-laptop;
+  $this-vertical-margin-palmtop: $natural-vertical-margin-palmtop - $line-space-root-half-palmtop;
+
+  display: block;
+  margin-bottom: $this-vertical-margin-desktop;
+  margin-top: $this-vertical-margin-desktop;
+
+  + %natural-solid {
+    margin-top: $natural-vertical-margin-desktop;
+  }
+
+  @include is-laptop {
+    @if ($this-vertical-margin-laptop != $this-vertical-margin-desktop) {
+      margin-bottom: $this-vertical-margin-laptop;
+      margin-top: $this-vertical-margin-laptop;
+    }
+
+    @if ($natural-vertical-margin-laptop != $natural-vertical-margin-desktop) {
+      + %natural-solid {
+        margin-top: $natural-vertical-margin-laptop;
+      }
+    }
+  }
+
+  @include is-palmtop {
+    @if ($this-vertical-margin-palmtop != $this-vertical-margin-desktop) {
+      margin-bottom: $this-vertical-margin-palmtop;
+      margin-top: $this-vertical-margin-palmtop;
+    }
+
+    @if ($natural-vertical-margin-palmtop != $natural-vertical-margin-desktop) {
+      + %natural-solid {
+        margin-top: $natural-vertical-margin-palmtop;
+      }
+    }
+  }
+}
+
+%natural-text {
+  $this-vertical-margin-desktop: $natural-vertical-margin-desktop - $line-space-root-desktop;
+  $this-vertical-margin-laptop: $natural-vertical-margin-laptop - $line-space-root-laptop;
+  $this-vertical-margin-palmtop: $natural-vertical-margin-palmtop - $line-space-root-palmtop;
+
+  display: block;
+  margin-bottom: $this-vertical-margin-desktop;
+  margin-top: $this-vertical-margin-desktop;
+
+  @include is-laptop {
+    @if ($this-vertical-margin-laptop != $this-vertical-margin-desktop) {
+      margin-bottom: $this-vertical-margin-laptop;
+      margin-top: $this-vertical-margin-laptop;
+    }
+  }
+
+  @include is-palmtop {
+    @if ($this-vertical-margin-palmtop != $this-vertical-margin-desktop) {
+      margin-bottom: $this-vertical-margin-palmtop;
+      margin-top: $this-vertical-margin-palmtop;
+    }
+  }
+}
+
+%natural-table-cell {
+  $this-vertical-padding-desktop: $font-size-root-desktop - $line-space-root-half-desktop;
+  $this-vertical-padding-laptop: $font-size-root-laptop - $line-space-root-half-laptop;
+  $this-vertical-padding-palmtop: $font-size-root-palmtop - $line-space-root-half-palmtop;
+
+  .ie9 & {
+    white-space: normal;
+  }
+
+  border: 1px solid $color-silver;
+  padding: $this-vertical-padding-desktop $container-padded-width-desktop;
+  white-space: nowrap;
+
+  @include is-laptop {
+    @if ($this-vertical-padding-laptop != $this-vertical-padding-desktop) {
+      padding-bottom: $this-vertical-padding-laptop;
+    }
+
+    @if ($container-padded-width-laptop != $container-padded-width-desktop) {
+      padding-left: $container-padded-width-laptop;
+      padding-right: $container-padded-width-laptop;
+    }
+
+    @if ($this-vertical-padding-laptop != $this-vertical-padding-desktop) {
+      padding-top: $this-vertical-padding-laptop;
+    }
+  }
+
+  @include is-palmtop {
+    @if ($this-vertical-padding-palmtop != $this-vertical-padding-desktop) {
+      padding-bottom: $this-vertical-padding-palmtop;
+    }
+
+    @if ($container-padded-width-palmtop != $container-padded-width-desktop) {
+      padding-left: $container-padded-width-palmtop;
+      padding-right: $container-padded-width-palmtop;
+    }
+
+    @if ($this-vertical-padding-palmtop != $this-vertical-padding-desktop) {
+      padding-top: $this-vertical-padding-palmtop;
+    }
+  }
+}
+
+@include output {
+  .natural {
+    @extend %natural;
+
+    .solid {
+      @extend %natural-solid;
+    }
+  }
+}

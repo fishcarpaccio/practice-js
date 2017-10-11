@@ -1,0 +1,484 @@
+@charset "utf-8";
+
+//
+// サイト全体で共通の要素のスタイル
+//
+
+html {
+}
+
+head {
+}
+
+title {
+}
+
+base {
+}
+
+link {
+}
+
+meta {
+}
+
+style {
+}
+
+body {
+}
+
+article {
+}
+
+section {
+}
+
+nav {
+}
+
+aside {
+}
+
+h1 {
+  %natural & {
+    @extend %natural-heading;
+    font-size: 2.5em;
+  }
+}
+
+h2 {
+  %natural & {
+    @extend %natural-heading;
+    font-size: 1.75em;
+  }
+}
+
+h3 {
+  %natural & {
+    @extend %natural-heading;
+    font-size: 1.25em;
+  }
+}
+
+h4 {
+  %natural & {
+    @extend %natural-heading;
+  }
+}
+
+h5 {
+  %natural & {
+    @extend %natural-heading;
+  }
+}
+
+h6 {
+  %natural & {
+    @extend %natural-heading;
+  }
+}
+
+header {
+}
+
+footer {
+}
+
+address {
+}
+
+p {
+  %natural & {
+    @extend %natural-text;
+  }
+}
+
+hr {
+  %natural & {
+    @extend %natural-solid;
+    background-color: $color-silver;
+    height: 1px;
+  }
+}
+
+pre {
+  %natural & {
+    @extend %natural-code-block;
+  }
+}
+
+blockquote {
+  %natural & {
+    @extend %natural-indented;
+    @extend %natural-solid;
+    border-left: 1px solid $color-silver;
+    color: $color-gray;
+  }
+}
+
+ol,
+ul {
+  %natural & {
+    @extend %natural-indented;
+    @extend %natural-text;
+  }
+}
+
+ol {
+}
+
+ul {
+}
+
+li {
+  %natural & {
+    @extend %natural-list-item;
+    list-style-type: inherit;
+
+    ol,
+    ul {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+dl {
+  %natural & {
+    @extend %natural-text;
+  }
+}
+
+dt {
+  %natural & {
+    @extend %natural-list-item;
+    font-style: italic;
+    font-weight: bold;
+  }
+}
+
+dd {
+  %natural & {
+    @extend %natural-indented;
+  }
+}
+
+figure {
+  %natural & {
+    @extend %natural-text;
+  }
+}
+
+figcaption {
+  %natural figure & {
+    @extend %natural-caption;
+  }
+}
+
+div {
+}
+
+main {
+}
+
+a {
+}
+
+em {
+}
+
+strong {
+}
+
+small {
+}
+
+s {
+}
+
+cite {
+}
+
+q {
+}
+
+dfn {
+}
+
+abbr {
+}
+
+data {
+}
+
+time {
+}
+
+code {
+}
+
+var {
+}
+
+samp {
+}
+
+kbd {
+}
+
+sub {
+}
+
+sup {
+}
+
+i {
+}
+
+b {
+}
+
+u {
+}
+
+mark {
+}
+
+ruby {
+}
+
+rb {
+}
+
+rt {
+}
+
+rtc {
+}
+
+rp {
+}
+
+bdi {
+}
+
+bdo {
+}
+
+span {
+}
+
+br {
+}
+
+wbr {
+}
+
+ins {
+}
+
+del {
+}
+
+img {
+}
+
+iframe {
+}
+
+embed {
+}
+
+object {
+}
+
+param {
+}
+
+video {
+}
+
+audio {
+}
+
+source {
+}
+
+track {
+}
+
+map {
+}
+
+area {
+}
+
+svg {
+}
+
+table {
+  %natural & {
+    @extend %natural-solid;
+    overflow: auto;
+  }
+}
+
+caption {
+  %natural & {
+    @extend %natural-caption;
+  }
+}
+
+colgroup {
+  %natural & {
+  }
+}
+
+col {
+  %natural & {
+  }
+}
+
+tbody {
+  %natural & {
+  }
+}
+
+thead {
+  %natural & {
+  }
+}
+
+tfoot {
+  %natural & {
+  }
+}
+
+tr {
+  %natural & {
+  }
+}
+
+td {
+  %natural & {
+    @extend %natural-table-cell;
+  }
+}
+
+th {
+  %natural & {
+    @extend %natural-table-cell;
+    font-weight: bold;
+  }
+}
+
+form {
+}
+
+label {
+}
+
+input {
+  &[type="text"] {
+  }
+
+  &[type="search"] {
+  }
+
+  &[type="tel"] {
+  }
+
+  &[type="url"] {
+  }
+
+  &[type="email"] {
+  }
+
+  &[type="password"] {
+  }
+
+  &[type="data"] {
+  }
+
+  &[type="time"] {
+  }
+
+  &[type="number"] {
+  }
+
+  &[type="range"] {
+  }
+
+  &[type="color"] {
+  }
+
+  &[type="checkbox"] {
+  }
+
+  &[type="radio"] {
+  }
+
+  &[type="file"] {
+  }
+
+  &[type="submit"] {
+  }
+
+  &[type="image"] {
+  }
+
+  &[type="reset"] {
+  }
+
+  &[type="button"] {
+  }
+}
+
+button {
+}
+
+select {
+}
+
+datalist {
+}
+
+optgroup {
+}
+
+option {
+}
+
+textarea {
+}
+
+keygen {
+}
+
+output {
+}
+
+progress {
+}
+
+meter {
+}
+
+fieldset {
+}
+
+legend {
+}
+
+script {
+}
+
+noscript {
+}
+
+template {
+}
+
+canvas {
+}

@@ -1,0 +1,1068 @@
+html {
+  background-color: #fff;
+  color: #111;
+  font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+  font-size: 18px;
+  line-height: 1.6111111111;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  background-color: transparent;
+  color: #0074d9;
+}
+a:visited {
+  color: #b10dc9;
+}
+a:active {
+  color: #ff4136;
+}
+
+mark {
+  background-color: #ffdc00;
+  color: #111;
+}
+
+input[type="submit"],
+input[type="reset"],
+html input[type="button"],
+button {
+  -webkit-appearance: button;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+hr,
+img,
+iframe,
+fieldset,
+legend {
+  border: 0;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="color"],
+textarea {
+  border-radius: 0;
+}
+
+table {
+  border-spacing: 0;
+}
+
+sub {
+  bottom: -0.2em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+hr,
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  color: inherit;
+}
+
+html body [disabled] {
+  cursor: default;
+}
+
+input[type="submit"],
+input[type="reset"],
+html input[type="button"],
+button {
+  cursor: pointer;
+}
+
+article,
+section,
+nav,
+aside,
+header,
+footer,
+figure,
+figcaption,
+main {
+  display: block;
+}
+
+video,
+audio,
+progress,
+canvas {
+  display: inline-block;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+address,
+pre,
+code,
+samp,
+kbd,
+th,
+input,
+button,
+select,
+optgroup,
+textarea {
+  font: inherit;
+}
+
+pre,
+code,
+samp,
+kbd {
+  font-family: "Migu 1M", monospace;
+}
+
+sub,
+sup {
+  font-size: 61.1111111111%;
+}
+
+small {
+  font-size: 77.7777777778%;
+}
+
+strong,
+b,
+optgroup {
+  font-weight: bold;
+}
+
+hr {
+  height: 0;
+}
+
+img {
+  height: auto;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+sub,
+sup {
+  line-height: 0;
+}
+
+input,
+button {
+  line-height: 1.25;
+}
+
+li {
+  list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+hr,
+pre,
+blockquote,
+ol,
+ul,
+dl,
+dd,
+figure,
+input,
+button,
+select,
+optgroup,
+textarea,
+fieldset {
+  margin: 0;
+}
+
+img,
+iframe,
+video,
+canvas {
+  max-width: 100%;
+}
+
+pre,
+textarea {
+  overflow: auto;
+}
+
+button {
+  overflow: visible;
+}
+
+ol,
+ul,
+td,
+th,
+input[type="checkbox"],
+input[type="radio"],
+fieldset,
+legend {
+  padding: 0;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+}
+
+sub,
+sup {
+  position: relative;
+}
+
+q:after {
+  content: "\201D";
+}
+
+q:before {
+  content: "\201C";
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+sup {
+  top: -0.6em;
+}
+
+sub,
+sup,
+progress,
+meter {
+  vertical-align: baseline;
+}
+
+img,
+iframe,
+video,
+audio,
+input[type="image"],
+textarea,
+canvas {
+  vertical-align: bottom;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+svg:not(:root) {
+  max-width: 100%;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.block {
+  display: block;
+  text-decoration: none;
+}
+.block,
+.block:active,
+.block:visited {
+  color: inherit;
+}
+
+.break {
+  word-wrap: break-word;
+}
+
+.full {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.stick {
+  margin: 0 !important;
+}
+
+.stick-bottom {
+  margin-bottom: 0 !important;
+}
+
+.stick-left {
+  margin-left: 0 !important;
+}
+
+.stick-right {
+  margin-right: 0 !important;
+}
+
+.stick-top {
+  margin-top: 0 !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-lower {
+  text-transform: lowercase;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.word {
+  display: inline-block;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  min-width: 320px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.natural {
+  display: block;
+  padding-bottom: 5.5px;
+  padding-top: 5.5px;
+}
+
+.natural figure figcaption,
+.natural caption {
+  color: #aaa;
+  font-size: 77.7777777778%;
+  line-height: 1.25;
+  margin-bottom: 11px;
+  margin-top: 11px;
+}
+.natural figure figcaption:first-child,
+.natural caption:first-child {
+  margin-top: 0;
+}
+
+.natural pre {
+  background-color: #002b36;
+  color: #839496;
+  border-radius: 0.25em;
+  padding: 34.5px 36px;
+}
+
+.natural h1,
+.natural h2,
+.natural h3,
+.natural h4,
+.natural h5,
+.natural h6 {
+  display: block;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.natural blockquote,
+.natural ol,
+.natural ul,
+.natural dd {
+  padding-left: 36px;
+}
+
+.natural li,
+.natural dt {
+  margin-top: 5.5px;
+}
+
+.natural pre,
+.natural h1,
+.natural h2,
+.natural h3,
+.natural h4,
+.natural h5,
+.natural h6,
+.natural .solid,
+.natural hr,
+.natural blockquote,
+.natural table {
+  display: block;
+  margin-bottom: 34.5px;
+  margin-top: 34.5px;
+}
+.natural pre + pre,
+.natural h1 + pre,
+.natural h2 + pre,
+.natural h3 + pre,
+.natural h4 + pre,
+.natural h5 + pre,
+.natural h6 + pre,
+.natural .solid + pre,
+.natural hr + pre,
+.natural blockquote + pre,
+.natural table + pre,
+.natural pre + h1,
+.natural h1 + h1,
+.natural h2 + h1,
+.natural h3 + h1,
+.natural h4 + h1,
+.natural h5 + h1,
+.natural h6 + h1,
+.natural .solid + h1,
+.natural hr + h1,
+.natural blockquote + h1,
+.natural table + h1,
+.natural pre + h2,
+.natural h1 + h2,
+.natural h2 + h2,
+.natural h3 + h2,
+.natural h4 + h2,
+.natural h5 + h2,
+.natural h6 + h2,
+.natural .solid + h2,
+.natural hr + h2,
+.natural blockquote + h2,
+.natural table + h2,
+.natural pre + h3,
+.natural h1 + h3,
+.natural h2 + h3,
+.natural h3 + h3,
+.natural h4 + h3,
+.natural h5 + h3,
+.natural h6 + h3,
+.natural .solid + h3,
+.natural hr + h3,
+.natural blockquote + h3,
+.natural table + h3,
+.natural pre + h4,
+.natural h1 + h4,
+.natural h2 + h4,
+.natural h3 + h4,
+.natural h4 + h4,
+.natural h5 + h4,
+.natural h6 + h4,
+.natural .solid + h4,
+.natural hr + h4,
+.natural blockquote + h4,
+.natural table + h4,
+.natural pre + h5,
+.natural h1 + h5,
+.natural h2 + h5,
+.natural h3 + h5,
+.natural h4 + h5,
+.natural h5 + h5,
+.natural h6 + h5,
+.natural .solid + h5,
+.natural hr + h5,
+.natural blockquote + h5,
+.natural table + h5,
+.natural pre + h6,
+.natural h1 + h6,
+.natural h2 + h6,
+.natural h3 + h6,
+.natural h4 + h6,
+.natural h5 + h6,
+.natural h6 + h6,
+.natural .solid + h6,
+.natural hr + h6,
+.natural blockquote + h6,
+.natural table + h6,
+.natural pre + .solid,
+.natural h1 + .solid,
+.natural h2 + .solid,
+.natural h3 + .solid,
+.natural h4 + .solid,
+.natural h5 + .solid,
+.natural h6 + .solid,
+.natural .solid + .solid,
+.natural hr + .solid,
+.natural blockquote + .solid,
+.natural table + .solid,
+.natural pre + hr,
+.natural h1 + hr,
+.natural h2 + hr,
+.natural h3 + hr,
+.natural h4 + hr,
+.natural h5 + hr,
+.natural h6 + hr,
+.natural .solid + hr,
+.natural hr + hr,
+.natural blockquote + hr,
+.natural table + hr,
+.natural pre + blockquote,
+.natural h1 + blockquote,
+.natural h2 + blockquote,
+.natural h3 + blockquote,
+.natural h4 + blockquote,
+.natural h5 + blockquote,
+.natural h6 + blockquote,
+.natural .solid + blockquote,
+.natural hr + blockquote,
+.natural blockquote + blockquote,
+.natural table + blockquote,
+.natural pre + table,
+.natural h1 + table,
+.natural h2 + table,
+.natural h3 + table,
+.natural h4 + table,
+.natural h5 + table,
+.natural h6 + table,
+.natural .solid + table,
+.natural hr + table,
+.natural blockquote + table,
+.natural table + table {
+  margin-top: 40px;
+}
+
+.natural p,
+.natural ol,
+.natural ul,
+.natural dl,
+.natural figure {
+  display: block;
+  margin-bottom: 29px;
+  margin-top: 29px;
+}
+
+.natural td,
+.natural th {
+  border: 1px solid #ddd;
+  padding: 12.5px 36px;
+  white-space: nowrap;
+}
+.ie9 .natural td,
+.natural .ie9 td,
+.ie9 .natural th,
+.natural .ie9 th {
+  white-space: normal;
+}
+
+.symbol-example {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  height: 1.6111111111em;
+  vertical-align: bottom;
+  width: 1.6111111111em;
+}
+
+.symbol-example {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA1BMVEWAgICQdD0xAAAAC0lEQVQIHWMgEQAAADAAAQrnSBQAAAAASUVORK5CYII=");
+}
+
+.natural h1 {
+  font-size: 2.5em;
+}
+
+.natural h2 {
+  font-size: 1.75em;
+}
+
+.natural h3 {
+  font-size: 1.25em;
+}
+
+.natural hr {
+  background-color: #ddd;
+  height: 1px;
+}
+
+.natural blockquote {
+  border-left: 1px solid #ddd;
+  color: #aaa;
+}
+
+.natural li {
+  list-style-type: inherit;
+}
+.natural li ol,
+.natural li ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.natural dt {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.natural table {
+  overflow: auto;
+}
+
+.natural th {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 1215px) {
+  html {
+    font-size: 17px;
+    line-height: 1.6176470588;
+  }
+  sub,
+  sup {
+    font-size: 64.7058823529%;
+  }
+  small {
+    font-size: 76.4705882353%;
+  }
+  .container {
+    padding-left: 25.5px;
+    padding-right: 25.5px;
+  }
+  .natural {
+    padding-bottom: 5.25px;
+    padding-top: 5.25px;
+  }
+  .natural figure figcaption,
+  .natural caption {
+    font-size: 76.4705882353%;
+    margin-bottom: 10.5px;
+    margin-top: 10.5px;
+  }
+  .natural pre {
+    padding-bottom: 32.75px;
+    padding-left: 25.5px;
+    padding-right: 25.5px;
+    padding-top: 32.75px;
+  }
+  .natural blockquote,
+  .natural ol,
+  .natural ul,
+  .natural dd {
+    padding-left: 25.5px;
+  }
+  .natural li,
+  .natural dt {
+    margin-top: 5.25px;
+  }
+  .natural pre,
+  .natural h1,
+  .natural h2,
+  .natural h3,
+  .natural h4,
+  .natural h5,
+  .natural h6,
+  .natural .solid,
+  .natural hr,
+  .natural blockquote,
+  .natural table {
+    margin-bottom: 32.75px;
+    margin-top: 32.75px;
+  }
+  .natural pre + pre,
+  .natural h1 + pre,
+  .natural h2 + pre,
+  .natural h3 + pre,
+  .natural h4 + pre,
+  .natural h5 + pre,
+  .natural h6 + pre,
+  .natural .solid + pre,
+  .natural hr + pre,
+  .natural blockquote + pre,
+  .natural table + pre,
+  .natural pre + h1,
+  .natural h1 + h1,
+  .natural h2 + h1,
+  .natural h3 + h1,
+  .natural h4 + h1,
+  .natural h5 + h1,
+  .natural h6 + h1,
+  .natural .solid + h1,
+  .natural hr + h1,
+  .natural blockquote + h1,
+  .natural table + h1,
+  .natural pre + h2,
+  .natural h1 + h2,
+  .natural h2 + h2,
+  .natural h3 + h2,
+  .natural h4 + h2,
+  .natural h5 + h2,
+  .natural h6 + h2,
+  .natural .solid + h2,
+  .natural hr + h2,
+  .natural blockquote + h2,
+  .natural table + h2,
+  .natural pre + h3,
+  .natural h1 + h3,
+  .natural h2 + h3,
+  .natural h3 + h3,
+  .natural h4 + h3,
+  .natural h5 + h3,
+  .natural h6 + h3,
+  .natural .solid + h3,
+  .natural hr + h3,
+  .natural blockquote + h3,
+  .natural table + h3,
+  .natural pre + h4,
+  .natural h1 + h4,
+  .natural h2 + h4,
+  .natural h3 + h4,
+  .natural h4 + h4,
+  .natural h5 + h4,
+  .natural h6 + h4,
+  .natural .solid + h4,
+  .natural hr + h4,
+  .natural blockquote + h4,
+  .natural table + h4,
+  .natural pre + h5,
+  .natural h1 + h5,
+  .natural h2 + h5,
+  .natural h3 + h5,
+  .natural h4 + h5,
+  .natural h5 + h5,
+  .natural h6 + h5,
+  .natural .solid + h5,
+  .natural hr + h5,
+  .natural blockquote + h5,
+  .natural table + h5,
+  .natural pre + h6,
+  .natural h1 + h6,
+  .natural h2 + h6,
+  .natural h3 + h6,
+  .natural h4 + h6,
+  .natural h5 + h6,
+  .natural h6 + h6,
+  .natural .solid + h6,
+  .natural hr + h6,
+  .natural blockquote + h6,
+  .natural table + h6,
+  .natural pre + .solid,
+  .natural h1 + .solid,
+  .natural h2 + .solid,
+  .natural h3 + .solid,
+  .natural h4 + .solid,
+  .natural h5 + .solid,
+  .natural h6 + .solid,
+  .natural .solid + .solid,
+  .natural hr + .solid,
+  .natural blockquote + .solid,
+  .natural table + .solid,
+  .natural pre + hr,
+  .natural h1 + hr,
+  .natural h2 + hr,
+  .natural h3 + hr,
+  .natural h4 + hr,
+  .natural h5 + hr,
+  .natural h6 + hr,
+  .natural .solid + hr,
+  .natural hr + hr,
+  .natural blockquote + hr,
+  .natural table + hr,
+  .natural pre + blockquote,
+  .natural h1 + blockquote,
+  .natural h2 + blockquote,
+  .natural h3 + blockquote,
+  .natural h4 + blockquote,
+  .natural h5 + blockquote,
+  .natural h6 + blockquote,
+  .natural .solid + blockquote,
+  .natural hr + blockquote,
+  .natural blockquote + blockquote,
+  .natural table + blockquote,
+  .natural pre + table,
+  .natural h1 + table,
+  .natural h2 + table,
+  .natural h3 + table,
+  .natural h4 + table,
+  .natural h5 + table,
+  .natural h6 + table,
+  .natural .solid + table,
+  .natural hr + table,
+  .natural blockquote + table,
+  .natural table + table {
+    margin-top: 38px;
+  }
+  .natural p,
+  .natural ol,
+  .natural ul,
+  .natural dl,
+  .natural figure {
+    margin-bottom: 27.5px;
+    margin-top: 27.5px;
+  }
+  .natural td,
+  .natural th {
+    padding-bottom: 11.75px;
+    padding-left: 25.5px;
+    padding-right: 25.5px;
+    padding-top: 11.75px;
+  }
+  .symbol-example {
+    height: 1.6176470588em;
+    width: 1.6176470588em;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 16px;
+    line-height: 1.625;
+  }
+  sub,
+  sup {
+    font-size: 68.75%;
+  }
+  small {
+    font-size: 75%;
+  }
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .natural {
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  .natural figure figcaption,
+  .natural caption {
+    font-size: 75%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .natural pre {
+    padding-bottom: 31px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 31px;
+  }
+  .natural blockquote,
+  .natural ol,
+  .natural ul,
+  .natural dd {
+    padding-left: 16px;
+  }
+  .natural li,
+  .natural dt {
+    margin-top: 5px;
+  }
+  .natural pre,
+  .natural h1,
+  .natural h2,
+  .natural h3,
+  .natural h4,
+  .natural h5,
+  .natural h6,
+  .natural .solid,
+  .natural hr,
+  .natural blockquote,
+  .natural table {
+    margin-bottom: 31px;
+    margin-top: 31px;
+  }
+  .natural pre + pre,
+  .natural h1 + pre,
+  .natural h2 + pre,
+  .natural h3 + pre,
+  .natural h4 + pre,
+  .natural h5 + pre,
+  .natural h6 + pre,
+  .natural .solid + pre,
+  .natural hr + pre,
+  .natural blockquote + pre,
+  .natural table + pre,
+  .natural pre + h1,
+  .natural h1 + h1,
+  .natural h2 + h1,
+  .natural h3 + h1,
+  .natural h4 + h1,
+  .natural h5 + h1,
+  .natural h6 + h1,
+  .natural .solid + h1,
+  .natural hr + h1,
+  .natural blockquote + h1,
+  .natural table + h1,
+  .natural pre + h2,
+  .natural h1 + h2,
+  .natural h2 + h2,
+  .natural h3 + h2,
+  .natural h4 + h2,
+  .natural h5 + h2,
+  .natural h6 + h2,
+  .natural .solid + h2,
+  .natural hr + h2,
+  .natural blockquote + h2,
+  .natural table + h2,
+  .natural pre + h3,
+  .natural h1 + h3,
+  .natural h2 + h3,
+  .natural h3 + h3,
+  .natural h4 + h3,
+  .natural h5 + h3,
+  .natural h6 + h3,
+  .natural .solid + h3,
+  .natural hr + h3,
+  .natural blockquote + h3,
+  .natural table + h3,
+  .natural pre + h4,
+  .natural h1 + h4,
+  .natural h2 + h4,
+  .natural h3 + h4,
+  .natural h4 + h4,
+  .natural h5 + h4,
+  .natural h6 + h4,
+  .natural .solid + h4,
+  .natural hr + h4,
+  .natural blockquote + h4,
+  .natural table + h4,
+  .natural pre + h5,
+  .natural h1 + h5,
+  .natural h2 + h5,
+  .natural h3 + h5,
+  .natural h4 + h5,
+  .natural h5 + h5,
+  .natural h6 + h5,
+  .natural .solid + h5,
+  .natural hr + h5,
+  .natural blockquote + h5,
+  .natural table + h5,
+  .natural pre + h6,
+  .natural h1 + h6,
+  .natural h2 + h6,
+  .natural h3 + h6,
+  .natural h4 + h6,
+  .natural h5 + h6,
+  .natural h6 + h6,
+  .natural .solid + h6,
+  .natural hr + h6,
+  .natural blockquote + h6,
+  .natural table + h6,
+  .natural pre + .solid,
+  .natural h1 + .solid,
+  .natural h2 + .solid,
+  .natural h3 + .solid,
+  .natural h4 + .solid,
+  .natural h5 + .solid,
+  .natural h6 + .solid,
+  .natural .solid + .solid,
+  .natural hr + .solid,
+  .natural blockquote + .solid,
+  .natural table + .solid,
+  .natural pre + hr,
+  .natural h1 + hr,
+  .natural h2 + hr,
+  .natural h3 + hr,
+  .natural h4 + hr,
+  .natural h5 + hr,
+  .natural h6 + hr,
+  .natural .solid + hr,
+  .natural hr + hr,
+  .natural blockquote + hr,
+  .natural table + hr,
+  .natural pre + blockquote,
+  .natural h1 + blockquote,
+  .natural h2 + blockquote,
+  .natural h3 + blockquote,
+  .natural h4 + blockquote,
+  .natural h5 + blockquote,
+  .natural h6 + blockquote,
+  .natural .solid + blockquote,
+  .natural hr + blockquote,
+  .natural blockquote + blockquote,
+  .natural table + blockquote,
+  .natural pre + table,
+  .natural h1 + table,
+  .natural h2 + table,
+  .natural h3 + table,
+  .natural h4 + table,
+  .natural h5 + table,
+  .natural h6 + table,
+  .natural .solid + table,
+  .natural hr + table,
+  .natural blockquote + table,
+  .natural table + table {
+    margin-top: 36px;
+  }
+  .natural p,
+  .natural ol,
+  .natural ul,
+  .natural dl,
+  .natural figure {
+    margin-bottom: 26px;
+    margin-top: 26px;
+  }
+  .natural td,
+  .natural th {
+    padding-bottom: 11px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 11px;
+  }
+  .symbol-example {
+    height: 1.625em;
+    width: 1.625em;
+  }
+}

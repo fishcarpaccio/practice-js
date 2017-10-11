@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>アコーディオン</title>
+  <link rel="stylesheet" href="/assets/styles/main.css" media="screen, print">
+  <link rel="stylesheet" href="/assets/styles/accordion.css" media="screen, print">
+
+  <script src="/assets/scripts/precedence.js"></script>
+</head>
+
+<body>
+  {{> ../inc/header}}
+  <main>
+    <ol class="ol-js-practice">
+      <li class="li-js-practice">
+        <dl class="dl_content">
+          <dt class="dt_content toggleButton">Q. 1 + 1 = ?</dt>
+          <dd class="dd_content toggleTarget">A. 2</dd>
+        </dl>
+      </li>
+      <li class="li-js-practice">
+        <dl class="dl_content">
+          <dt class="dt_content toggleButton">Q. 2 + 2 = ?</dt>
+          <dd class="dd_content toggleTarget">A. 4</dd>
+        </dl>
+      </li>
+      <li class="li-js-practice">
+        <dl class="dl_content">
+          <dt class="dt_content toggleButton">Q. 4 + 4 = ?</dt>
+          <dd class="dd_content toggleTarget">A. 8</dd>
+        </dl>
+      </li>
+      <li class="li-js-practice">
+        <dl class="dl_content">
+          <dt class="dt_content toggleButton">Q. 8 + 8 = ?</dt>
+          <dd class="dd_content toggleTarget">A. 16</dd>
+        </dl>
+      </li>
+    </ol>
+
+    <ul class="js-button">
+      <button class="js-open-all">すべて開く</button>
+      <button class="js-close-all">すべて閉じる</button>
+    </ul>
+
+
+
+  </main>
+  {{> ../inc/footer}}
+
+
+  <script src="/assets/scripts/jquery.min.js"></script>
+  <script src="/assets/scripts/main.js"></script>
+  <script src="/assets/scripts/accordion_practice.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="{{& root-classes}}" lang="{{& root-lang}}">
+  <head>
+    {{> inc/metadata}}
+
+    <title>{{& document-name}} | {{& site-name}}</title>
+
+    {{> inc/link}}
+    {{> inc/style}}
+
+    {{> inc/script-above}}
+  </head>
+
+  <body>
+    {{> inc/site-header}}
+
+    <main class="site-content">
+      <div class="container">
+        <h1>{{& document-name}}</h1>
+        <p>コンテンツ</p>
+      </div>
+    </main>
+
+    {{> inc/site-footer}}
+
+    {{> inc/script-below}}
+  </body>
+</html>

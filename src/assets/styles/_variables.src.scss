@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+//
+// サイト全体で共通の設定（変更する際は _variables.src.scss を編集する）
+//
+
+//
+// IE をサポートする
+//
+
+$ie-support: true;
+
+//
+// ブレイクポイント
+//
+
+$breakpoint-desktop-min-width: ((BREAKPOINT_DESKTOP_MIN_WIDTH));
+$breakpoint-palmtop-max-width: ((BREAKPOINT_PALMTOP_MAX_WIDTH));
+
+//
+// 色
+//
+
+// html 要素
+// $color-root-background: default;
+// $color-root-foreground: default;
+
+// a 要素
+// $color-anchor-foreground: default;
+// $color-anchor-foreground-active: default;
+// $color-anchor-foreground-visited: default;
+
+// mark 要素
+// $color-mark-background: default;
+// $color-mark-foreground: default;
+
+//
+// フォント
+//
+
+// 基本のフォント
+$font-monospace: "Migu 1M", monospace;
+$font-sans-serif: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+$font-serif: "Noto Serif", serif;
+
+// html 要素
+$font-root: $font-sans-serif;
+
+//
+// 文字のサイズ
+//
+
+// html 要素
+$font-size-root-desktop: 18px;
+$font-size-root-laptop: 17px;
+$font-size-root-palmtop: 16px;
+
+// small 要素
+$font-size-small-desktop: 14px;
+$font-size-small-laptop: 13px;
+$font-size-small-palmtop: 12px;
+
+// sub、sup 要素
+$font-size-inferior-desktop: 11px;
+$font-size-inferior-laptop: 11px;
+$font-size-inferior-palmtop: 11px;
+
+//
+// 行間
+//
+
+// $line-height-root-* 用
+$line-space-root-desktop: 11px;
+$line-space-root-laptop: 10.5px;
+$line-space-root-palmtop: 10px;
+
+// $line-height-normal-* 用
+$line-space-normal-desktop: 4.5px;
+$line-space-normal-laptop: 4.25px;
+$line-space-normal-palmtop: 4px;
+
+//
+// %container の設定
+//
+
+// 幅の上限と下限
+$container-max-width: 1280px;
+$container-min-width: 320px;
+
+// 左右内側の余白
+$container-padded-width-desktop: $font-size-root-desktop * 2;
+$container-padded-width-laptop: $font-size-root-laptop * 1.5;
+$container-padded-width-palmtop: $font-size-root-palmtop;
+
+//
+// %natural の設定
+//
+
+// 要素間の上下余白
+$natural-vertical-margin-desktop: $font-size-root-desktop + $line-space-root-desktop * 2;
+$natural-vertical-margin-laptop: $font-size-root-laptop + $line-space-root-laptop * 2;
+$natural-vertical-margin-palmtop: $font-size-root-palmtop + $line-space-root-palmtop * 2;

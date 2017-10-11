@@ -1,0 +1,46 @@
+ol{
+  width:480px;
+  li{
+    padding:10px 0 ;
+    dl{
+
+      dt{
+background-color:royalblue;
+      }
+      dd{
+        background-color:darksalmon;
+      }
+    }
+  }
+}
+
+ul {
+  li{
+    float:left;
+    width:200px;
+    color:#fff;
+
+    &:first-child{
+      background-color:red;
+    }
+
+    &:last-child{
+      background-color:blue;
+    }
+
+    &:after{
+      content:'';
+      display:table;
+clear:both;
+    }
+  }
+}
+
+dd.js-invisible{
+  display:none;
+  }
+
+  dd.js-visible{
+    display:block;
+    }
+

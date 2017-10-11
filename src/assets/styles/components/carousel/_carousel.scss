@@ -1,0 +1,70 @@
+.grand {
+  position: relative;
+  .js-button {
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .left {
+      width: 25px;
+      height: 240px;
+      background-color: lightblue;
+      float: left;
+      cursor: pointer;
+      &.unable {
+        background-color: #555;
+        cursor: default;
+      }
+      img{
+        position: relative;
+        top:calc(50% - 72px);
+      }
+    }
+    .right {
+      width: 25px;
+      height: 240px;
+      background-color: lightcoral;
+      float: left;
+      position: absolute;
+      left: 1025px;
+      cursor: pointer;
+      &.unable {
+        background-color: #555;
+        cursor: default;
+      }
+      img{
+        position: absolute;
+        top:calc(50% - 72px);
+      }
+    }
+  }
+  .js-carousel-container {
+    width: 1000px;
+    height: 240px;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    overflow: hidden;
+    ul.js-carousel {
+      margin: 0 -10px 0 -10px;
+      margin-left: -10px;
+      padding: 0;
+      transition: 0.3s;
+      list-style: none;
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+      li {
+        float: left;
+        margin: 0 10px 0 10px;
+        img {
+          width: 320px;
+          height: 240px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+//
+// このカテゴリ専用のスタイル
+//
+
+// サイト全体で共通の設定
+@import "variables.built";
+
+// タービン製サイト共通のスタイル（セレクタを出力しないタイプ）
+@import "../../../node_modules/core.css/scss/silent";
+
+// サイト全体で共通の関数
+@import "functions";
+
+// サイト全体で共通のミックスイン
+@import "mixins";
+
+// サイト全体で共通のレイアウトの単位
+@import "units";
+
+// このカテゴリ専用のコンポーネント
+@import "components/accordion/accordion.scss";

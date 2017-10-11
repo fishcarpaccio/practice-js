@@ -1,0 +1,1 @@
+ol{width:480px}ol li{padding:10px 0}ol li dl dt{background-color:royalblue}ol li dl dd{background-color:darksalmon}ul li{float:left;width:200px;color:#fff}ul li:first-child{background-color:red}ul li:last-child{background-color:blue}ul li:after{content:"";display:table;clear:both}dd.js-invisible{display:none}dd.js-visible{display:block}

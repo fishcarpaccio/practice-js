@@ -1,0 +1,34 @@
+{
+  "devDependencies": {
+    "autoprefixer": "",
+    "browser-sync": "",
+    "core.css": "",
+    "css-mqpacker": "",
+    "csswring": "",
+    "del": "",
+    "gulp": "",
+    "gulp-concat": "",
+    "gulp-csscomb": "",
+    "gulp-load-plugins": "",
+    "gulp-mustache": "",
+    "gulp-newer": "",
+    "gulp-postcss": "",
+    "gulp-rename": "",
+    "gulp-replace": "",
+    "gulp-sass": "",
+    "gulp-svgmin": "",
+    "gulp-uglify": "2.1.2",
+    "jquery": "3.x",
+    "run-sequence": ""
+  },
+  "engines": {
+    "node": "6.10.3"
+  },
+  "private": true,
+  "scripts": {
+    "build": "gulp",
+    "put": "gulp put",
+    "setup": "npm install",
+    "watch": "gulp watch"
+  }
+}

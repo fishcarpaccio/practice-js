@@ -1,0 +1,38 @@
+{
+  "breakpoints": {
+    "desktopMinWidthPlaceholder": "((BREAKPOINT_DESKTOP_MIN_WIDTH))",
+    "desktopMinWidthValue": "1216px",
+    "palmtopMaxWidthPlaceholder": "((BREAKPOINT_PALMTOP_MAX_WIDTH))",
+    "palmtopMaxWidthValue": "767px"
+  },
+  "browsers": [
+    "android >= 4",
+    "explorer >= 11",
+    "ios >= 9",
+    "last 2 versions"
+  ],
+  "contents": {
+    "document-name": "スタイルガイド",
+    "root-classes": "-no-js",
+    "root-lang": "ja",
+    "site-name": "TB_UXIT/boilerplate"
+  },
+  "developmentServer": "//cronus02/server/boilerplate/html/",
+  "directories": {
+    "building": {
+      "destinationForDevelopmentServer": "dist.dev/html/",
+      "destinationForLiveServer": "dist/html/",
+      "destinationForTestServer": "dist.test/html/",
+      "source": "src/",
+      "temporary": "tmp/"
+    },
+    "site": {
+      "document": "doc/",
+      "documentPartials": "inc/",
+      "images": "assets/images/",
+      "scripts": "assets/scripts/",
+      "styles": "assets/styles/",
+      "templates": "templates/"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.grand {
+  position: relative;
+}
+.grand .js-button:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grand .js-button .left {
+  width: 25px;
+  height: 240px;
+  background-color: lightblue;
+  float: left;
+  cursor: pointer;
+}
+.grand .js-button .left.unable {
+  background-color: #555;
+  cursor: default;
+}
+.grand .js-button .left img {
+  position: relative;
+  top: calc(50% - 72px);
+}
+.grand .js-button .right {
+  width: 25px;
+  height: 240px;
+  background-color: lightcoral;
+  float: left;
+  position: absolute;
+  left: 1025px;
+  cursor: pointer;
+}
+.grand .js-button .right.unable {
+  background-color: #555;
+  cursor: default;
+}
+.grand .js-button .right img {
+  position: absolute;
+  top: calc(50% - 72px);
+}
+.grand .js-carousel-container {
+  width: 1000px;
+  height: 240px;
+  position: absolute;
+  top: 0;
+  left: 25px;
+  overflow: hidden;
+}
+.grand .js-carousel-container ul.js-carousel {
+  margin: 0 -10px 0 -10px;
+  margin-left: -10px;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  list-style: none;
+}
+.grand .js-carousel-container ul.js-carousel:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grand .js-carousel-container ul.js-carousel li {
+  float: left;
+  margin: 0 10px 0 10px;
+}
+.grand .js-carousel-container ul.js-carousel li img {
+  width: 320px;
+  height: 240px;
+}

@@ -1,0 +1,1 @@
+!function(t){"use strict";t.fn.hasEvents=function(){var i=t(this).get(0),e=!0;return i&&void 0===t._data(i).events&&(e=!1),e},t.fn.isVisible=function(){return t.expr.filters.visible(this[0])}}(jQuery);
