@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>グーグルアース</title>
+  <link rel="stylesheet" href="/assets/styles/main.css" media="screen, print">
+  <link rel="stylesheet" href="/assets/styles/googlemapapi.css" media="screen, print">
+
+  <script src="/assets/scripts/precedence.js"></script>
+</head>
+
+<body>
+  {{> inc/header}}
+  <main>
+    <div class="googlemapapi">
+      <div class="container">
+        <div id="map">
+
+        </div>
+        <div class="form">
+          <form name="geo-form" id="geo-form">
+            <input type="text" name="geo-search" id="geo-search" size="25">
+            <input type="button" name="search-button" value="検索" class="search-button" onclick="onButtonClick()">
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  {{> inc/footer}}
+
+
+  <script src="/assets/scripts/jquery.min.js"></script>
+  <script src="/assets/scripts/main.js"></script>
+  <script src="/assets/scripts/googlemapapi_practice.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTZ5qQa72wYspenbc_9GdzBxoDmvV199U&callback=initMap" async
+    defer>
+  </script>
+
+</body>
+</html>

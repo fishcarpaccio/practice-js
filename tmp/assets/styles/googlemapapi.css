@@ -1,0 +1,18 @@
+.googlemapapi {
+  background-color: #e6e6e6;
+}
+.googlemapapi .container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.googlemapapi .container #map {
+  width: 640px;
+  height: 480px;
+  margin: 0 auto;
+}
+.googlemapapi .container .form {
+  text-align: center;
+}
+.googlemapapi .container .form form {
+  display: inline-block;
+}
