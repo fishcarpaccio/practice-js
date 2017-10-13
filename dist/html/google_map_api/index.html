@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>グーグルアース</title>
+  <title>グーグルマップAPI</title>
   <link rel="stylesheet" href="/assets/styles/main.css" media="screen, print">
   <link rel="stylesheet" href="/assets/styles/googlemapapi.css" media="screen, print">
 
@@ -24,7 +24,7 @@
         <div class="form">
           <form name="geo-form" id="geo-form">
             <input type="text" name="geo-search" id="geo-search" size="25">
-            <input type="button" name="search-button" value="検索" class="search-button" onclick="onButtonClick()">
+            <input type="button" name="search-button" value="検索" class="search-button">
           </form>
         </div>
       </div>
@@ -38,12 +38,10 @@
 </footer>
 
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTZ5qQa72wYspenbc_9GdzBxoDmvV199U"></script>
   <script src="/assets/scripts/jquery.min.js"></script>
   <script src="/assets/scripts/main.js"></script>
   <script src="/assets/scripts/googlemapapi_practice.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTZ5qQa72wYspenbc_9GdzBxoDmvV199U&callback=initMap" async
-    defer>
-  </script>
 
 </body>
 </html>
