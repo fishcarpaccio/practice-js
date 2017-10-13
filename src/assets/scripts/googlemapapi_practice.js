@@ -2,7 +2,7 @@
 initMap(38.126434, 136.969707, 5);
 
 //関数の定義（マップのイニシャライズ）
-function initMap(lat,lng,zoom) {
+function initMap(lat, lng, zoom) {
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: zoom,
@@ -37,16 +37,30 @@ function createMarker(name, latlng, icons, map) {
 }
 
 
-// フォームからの処理の実行
+// フォームから座標情報を受け取って行う処理の実行
 document.addEventListener('click', function (e) {
   if (e.target.className === 'search-button') {
     var geo = document.getElementById("geo-search").value;
-    console.log(geo);
-    var geopart = geo.split(',');
-    console.log(geopart);
+    // フォームから住所を受け取って行う処理の実行
 
-    initMap(parseInt(geopart[0]),parseInt(geopart[1]), 12);
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({
+        'address': geo
+      },
+      function (results, status) {
+        // 取得できたら
+        if (status == google.maps.GeocoderStatus.OK) {
+          // 緯度経度を変数へ格納
+          var debug = results[0];
+          var lat = results[0].geometry.bounds.f.b;
+          var lng = results[0].geometry.bounds.b.b;
+          // 取得した緯度経度でGoogleMap表示
+          initMap(lat, lng, 11)
+          console.log(debug);
+        } else {
+          console.log('error:GeocoderStatus = No');
+        }
+      }
+    )
   };
 });
-
-
