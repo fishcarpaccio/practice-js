@@ -3,7 +3,7 @@
   'use strict';
 
   // 初期化
-  initMap(38.126434, 136.969707, 5);
+  initMap(36.006009, 136.907828, 9);
 
   //関数の定義（マップのイニシャライズ）
   function initMap(lat, lng, zoom) {
@@ -15,21 +15,23 @@
         lng: lng
       }
     });
+
+    $.getJSON("markers.json", function (data) {
+      for (var i = 0; i < data.markers.length; i++) {
+        var name = data.markers[i].place;
+        var latlng = new google.maps.LatLng(data.markers[i].lat, data.markers[i].lng);
+        var icons = data.markers[i].img;
+        var contentStrings = data.markers[i].contentString;
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentStrings,
+          maxWidth:200
+        });
+
+        createMarker(name, latlng, icons, map);
+      }
+    });
   };
-
-  $.getJSON("markers.json", function (data) {
-    console.log('json Data:' + data.markers[0].place);
-    for (var i = 0; i < data.markers.length; i++) {
-      var name = data.markers[i].place;
-      var latlng = new google.maps.LatLng(data.markers[i].lat, data.markers[i].lng);
-      var icons = data.markers[i].img;
-      createMarker(name, latlng, icons, map);
-      console.log('name:'+ name);
-      console.log('latlng:'+ latlng);
-      console.log('icons:'+ icons);
-    }
-  });
-
 
   /*
 
@@ -70,7 +72,11 @@
       icon: icons,
       map: map
     });
+    marker.addListener('click', function() {
+      infowindow.open(map, marker);
+    });
   }
+
 
 
 

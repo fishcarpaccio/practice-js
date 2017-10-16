@@ -3,31 +3,36 @@
       "place": "飛騨",
       "lat": "36.239905",
       "lng": "137.186486",
-      "img": "../assets/images/google-map-api/mapiconsstation.png"
+      "img": "../assets/images/google-map-api/mapiconsstation.png",
+      "contentString": "飛騨です"
     },
     {
       "place": "下呂",
       "lat": "35.805693",
       "lng": "137.243191",
-      "img": "../assets/images/google-map-api/mapiconsbar.png"
+      "img": "../assets/images/google-map-api/mapiconsbar.png",
+      "contentString": "下呂です"
     },
     {
       "place": "ひるがの",
       "lat": "36.003896",
       "lng": "136.895696",
-      "img": "../assets/images/google-map-api/mapiconstravelautumn.png"
+      "img": "../assets/images/google-map-api/mapiconstravelautumn.png",
+      "contentString": "ひるがのです"
     },
     {
       "place": "郡上",
       "lat": "35.815754",
       "lng": "136.902175",
-      "img": "../assets/images/google-map-api/mapiconsrestaulant.png"
+      "img": "../assets/images/google-map-api/mapiconsrestaulant.png",
+      "contentString": "郡上です"
     },
     {
       "place": "日石寺",
       "lat": "36.662134",
       "lng": "137.391052",
-      "img": "../assets/images/google-map-api/mapiconscafe.png"
+      "img": "../assets/images/google-map-api/mapiconscafe.png",
+      "contentString": "そうめんが名物"
     }
   ]
 }
