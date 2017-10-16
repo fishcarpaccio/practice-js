@@ -22,18 +22,60 @@
         var latlng = new google.maps.LatLng(data.markers[i].lat, data.markers[i].lng);
         var icons = data.markers[i].img;
         var contentStrings = data.markers[i].contentString;
+        createMarker(name, latlng, icons, contentStrings, map);
 
-        var infowindow = new google.maps.InfoWindow({
-          content: contentStrings,
-          maxWidth:200
-        });
-
-        createMarker(name, latlng, icons, map);
       }
     });
-  };
+  }
 
-  /*
+  // マーカーを置く
+  function createMarker(name, latlng, icons, contentStrings, map) {
+    var marker = new google.maps.Marker({
+      position: latlng,
+      icon: icons,
+      map: map
+    });
+    marker.addListener('click', function() {
+      infowindow.open(map, marker);
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      content: contentStrings,
+      maxWidth:200
+    });
+  }
+
+  // フォームから座標情報を受け取って行う処理の実行
+  document.addEventListener('click', function (e) {
+    if (e.target.className === 'search-button') {
+      var geo = document.getElementById("geo-search").value;
+      // フォームから住所を受け取って行う処理の実行
+
+      var geocoder = new google.maps.Geocoder();
+      geocoder.geocode({
+          'address': geo
+        },
+        function (results, status) {
+          // 取得できたら
+          if (status == google.maps.GeocoderStatus.OK) {
+            // 緯度経度を変数へ格納
+            var debug = results[0];
+            var lat = results[0].geometry.bounds.f.b;
+            var lng = results[0].geometry.bounds.b.b;
+            // 取得した緯度経度でGoogleMap表示
+            initMap(lat, lng, 11);
+            console.log(debug);
+          } else {
+            console.log('error:GeocoderStatus = No');
+          }
+        }
+      );
+    }
+  });
+})(jQuery);
+
+
+ /*
 
     $.getJSON("markers.json", function (markers) {
       for (var i in markers = 0; i < markers.length; i++) {
@@ -64,50 +106,3 @@
   }
 };
 */
-
-  // マーカーを置く
-  function createMarker(name, latlng, icons, map) {
-    var marker = new google.maps.Marker({
-      position: latlng,
-      icon: icons,
-      map: map
-    });
-    marker.addListener('click', function() {
-      infowindow.open(map, marker);
-    });
-  }
-
-
-
-
-
-
-
-  // フォームから座標情報を受け取って行う処理の実行
-  document.addEventListener('click', function (e) {
-    if (e.target.className === 'search-button') {
-      var geo = document.getElementById("geo-search").value;
-      // フォームから住所を受け取って行う処理の実行
-
-      var geocoder = new google.maps.Geocoder();
-      geocoder.geocode({
-          'address': geo
-        },
-        function (results, status) {
-          // 取得できたら
-          if (status == google.maps.GeocoderStatus.OK) {
-            // 緯度経度を変数へ格納
-            var debug = results[0];
-            var lat = results[0].geometry.bounds.f.b;
-            var lng = results[0].geometry.bounds.b.b;
-            // 取得した緯度経度でGoogleMap表示
-            initMap(lat, lng, 11)
-            console.log(debug);
-          } else {
-            console.log('error:GeocoderStatus = No');
-          }
-        }
-      )
-    };
-  });
-})(jQuery)

@@ -120,7 +120,6 @@ gulp.task("build", function (callback) {
   runSequence([
     "build:as-is",
     "build:doc",
-    "build:htaccess",
     "build:html",
     "build:jquery.js",
     "build:scripts",
@@ -172,75 +171,7 @@ gulp.task("build:doc-newer", function () {
     .pipe(gulp.dest(destTestDir + docDir));
 });
 
-gulp.task("build:htaccess", function (callback) {
-  runSequence([
-    "build:htaccess:dev",
-    "build:htaccess:dist",
-    "build:htaccess:test",
-    "build:htpasswd:dist",
-    "build:htpasswd:test"
-  ], callback);
-});
 
-gulp.task("build:htaccess:dev", function () {
-  fs.access(srcDir + "htaccess-dev", fs.F_OK, function (error) {
-    if (!error) {
-      gulp.src([
-          srcDir + "htaccess",
-          srcDir + "htaccess-dev"
-        ])
-        .pipe($.newer(destDevDir + ".htaccess"))
-        .pipe($.concat(".htaccess"))
-        .pipe(gulp.dest(destDevDir));
-    }
-  });
-});
-
-gulp.task("build:htaccess:dist", function () {
-  fs.access(srcDir + "htaccess-dist", fs.F_OK, function (error) {
-    if (!error) {
-      gulp.src([
-          srcDir + "htaccess",
-          srcDir + "htaccess-dist"
-        ])
-        .pipe($.newer(destLiveDir + ".htaccess"))
-        .pipe($.concat(".htaccess"))
-        .pipe(gulp.dest(destLiveDir));
-    }
-  });
-});
-
-gulp.task("build:htaccess:test", function () {
-  fs.access(srcDir + "htaccess-test", fs.F_OK, function (error) {
-    if (!error) {
-      gulp.src([
-          srcDir + "htaccess",
-          srcDir + "htaccess-test"
-        ])
-        .pipe($.newer(destTestDir + ".htaccess"))
-        .pipe($.concat(".htaccess"))
-        .pipe(gulp.dest(destTestDir));
-    }
-  });
-});
-
-gulp.task("build:htpasswd:dist", function () {
-  return gulp.src(srcDir + "htpasswd-dist")
-    .pipe($.newer(destLiveDir + ".htpasswd"))
-    .pipe($.rename({
-      basename: ".htpasswd"
-    }))
-    .pipe(gulp.dest(destLiveDir));
-});
-
-gulp.task("build:htpasswd:test", function () {
-  return gulp.src(srcDir + "htpasswd-test")
-    .pipe($.newer(destTestDir + ".htpasswd"))
-    .pipe($.rename({
-      basename: ".htpasswd"
-    }))
-    .pipe(gulp.dest(destTestDir));
-});
 
 gulp.task("build:html", function () {
   return gulp.src([

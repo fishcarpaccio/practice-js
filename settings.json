@@ -17,7 +17,7 @@
     "root-lang": "ja",
     "site-name": "TB_UXIT/boilerplate"
   },
-  "developmentServer": "//cronus02/server/boilerplate/html/",
+  "developmentServer": "",
   "directories": {
     "building": {
       "destinationForDevelopmentServer": "dist.dev/html/",
