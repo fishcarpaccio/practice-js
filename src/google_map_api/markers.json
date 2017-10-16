@@ -1,0 +1,33 @@
+{
+  "markers": [{
+      "place": "飛騨",
+      "lat": "36.239905",
+      "lng": "137.186486",
+      "img": "../assets/images/google-map-api/mapiconsstation.png"
+    },
+    {
+      "place": "下呂",
+      "lat": "35.805693",
+      "lng": "137.243191",
+      "img": "../assets/images/google-map-api/mapiconsbar.png"
+    },
+    {
+      "place": "ひるがの",
+      "lat": "36.003896",
+      "lng": "136.895696",
+      "img": "../assets/images/google-map-api/mapiconstravelautumn.png"
+    },
+    {
+      "place": "郡上",
+      "lat": "35.815754",
+      "lng": "136.902175",
+      "img": "../assets/images/google-map-api/mapiconsrestaulant.png"
+    },
+    {
+      "place": "日石寺",
+      "lat": "36.662134",
+      "lng": "137.391052",
+      "img": "../assets/images/google-map-api/mapiconscafe.png"
+    }
+  ]
+}
